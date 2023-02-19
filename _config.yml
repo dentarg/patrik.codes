@@ -1,0 +1,22 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "patrik.codes" # the name of your site, e.g. ACME Corp.
+permalink: /:year/:slug
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "patrik"
+      layout: "post"
+
+exclude:
+  - run
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+plugins:
+  - jekyll-feed
+
