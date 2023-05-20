@@ -1,9 +1,15 @@
 {% include header.html %}
 
-<h1>
-  <code><a href="/">{{ site.title }}</a></code>
-</h1>
+<h2>
+  {{ page.title }}
+</h2>
 
 {{ content }}
+
+<p>
+  <small>
+    {{ page.date | date_to_string }}
+  </small>
+</p>
 
 {% include footer.html %}

@@ -3,6 +3,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "patrik.codes" # the name of your site, e.g. ACME Corp.
 permalink: /:year/:slug
 
+theme: jekyll-theme-hacker
+
 defaults:
   - scope:
       path: ""
@@ -19,4 +21,3 @@ exclude:
 
 plugins:
   - jekyll-feed
-

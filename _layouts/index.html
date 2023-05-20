@@ -1,9 +1,5 @@
 {% include header.html %}
 
-<h1>
-  <code>{{ site.title }}</code>
-</h1>
-
 {% for post in site.posts %}
 <h2>
   <a href="{{ post.url | remove_first: '.html' }}">{{ post.title }}</a>
