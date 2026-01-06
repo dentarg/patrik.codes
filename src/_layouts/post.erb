@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<h1>
+  <code><a href="/"><%= site.metadata["title"] %></a></code>
+</h1>
+
+<h2>
+  <%= data.title %>
+</h2>
+
+<%= yield %>
+
+<p><small><%= resource.date.strftime("%d %b %Y") %></small></p>

@@ -1,0 +1,21 @@
+url: ""
+base_path: ""
+title: "patrik.codes"
+permalink: simple
+
+timezone: UTC
+
+template_engine: erb
+
+collections:
+  posts:
+    output: true
+    permalink: /:year/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "patrik"
+      layout: "post"
