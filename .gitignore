@@ -1,2 +1,5 @@
-/.sass-cache/
-/_site/
+/tmp/
+/output/
+/.bridgetown-cache/
+/.bridgetown-webpack/
+/node_modules/

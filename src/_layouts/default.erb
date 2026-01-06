@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="<%= site.locale || "en-US" %>">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="alternate" type="application/atom+xml" title="<%= site.metadata["title"] %>" href="/feed.xml">
+    <title><%= site.metadata["title"] %><% if data.title && !data.title.to_s.empty? && data.title.to_s != "null" %>: <%= data.title %><% end %></title>
+    <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>

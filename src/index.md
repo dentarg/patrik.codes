@@ -1,6 +1,4 @@
 ---
 layout: index
-title: null
+title: ""
 ---
-
-
