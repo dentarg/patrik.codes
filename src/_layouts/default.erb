@@ -19,7 +19,7 @@
   </head>
   <body>
     <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-      <span class="theme-icon"></span>
+      <span class="theme-icon">dark</span>
     </button>
     <%= yield %>
     <script>
@@ -36,7 +36,7 @@
         }
 
         function updateIcon() {
-          icon.textContent = getCurrentTheme() === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
+          icon.textContent = getCurrentTheme() === 'dark' ? 'light' : 'dark';
         }
 
         updateIcon();
