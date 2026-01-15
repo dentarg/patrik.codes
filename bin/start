@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -eux
+
+bundle check || bundle install
+bundle exec bridgetown start

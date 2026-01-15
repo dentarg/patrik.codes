@@ -8,8 +8,7 @@ Site built with Bridgetown:
 ## Getting Started
 
 ```bash
-bundle install
-./run
+bin/start
 ```
 
 ## Build for Production
