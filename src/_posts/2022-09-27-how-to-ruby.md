@@ -2,7 +2,7 @@
 title: "How to Ruby on Apple Silicon"
 ---
 
-See https://gist.github.com/dentarg/79aae28811c290b7a6a96ab4fafd4197
+See <https://gist.github.com/dentarg/79aae28811c290b7a6a96ab4fafd4197>
 
 ```bash
 git clone https://gist.github.com/79aae28811c290b7a6a96ab4fafd4197.git /tmp/arm_mac
