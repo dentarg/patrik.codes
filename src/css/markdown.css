@@ -1,0 +1,172 @@
+.drop-zone {
+  padding: 1.5rem;
+  border: 1px dashed var(--border);
+  background: var(--code-bg);
+  text-align: center;
+}
+
+.drop-zone.is-dragging {
+  border-color: var(--accent);
+  background: var(--selection-bg);
+}
+
+.drop-zone > p:first-child {
+  margin-top: 0;
+  color: var(--text-bright);
+}
+
+.file-picker,
+.viewer-toolbar select {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--accent-dim);
+  background: var(--bg);
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+}
+
+.file-picker {
+  display: inline-block;
+  position: relative;
+}
+
+.file-picker input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-picker:focus-within,
+.viewer-toolbar :focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+#file-help,
+.viewer-note,
+#viewer-status {
+  font-size: 0.85rem;
+  color: var(--prompt);
+}
+
+.viewer-toolbar:not([hidden]) {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding-right: 4rem;
+  font-size: 0.85rem;
+}
+
+.viewer-toolbar label:not([hidden]) {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  flex: 1;
+}
+
+.viewer-toolbar select {
+  min-width: 0;
+  max-width: 20rem;
+  flex: 1;
+  padding: 0.2rem 0.4rem;
+}
+
+#clear-files {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--prompt);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+}
+
+#clear-files:hover {
+  color: var(--link-hover);
+}
+
+.markdown-preview h2::before,
+.markdown-preview h3::before,
+.markdown-preview h1 code::before,
+.markdown-preview h1 code::after,
+.markdown-preview h2 a::before,
+.markdown-preview h2 a::after,
+.markdown-preview blockquote::before,
+.markdown-preview blockquote::after {
+  content: none;
+}
+
+.markdown-preview {
+  overflow-wrap: anywhere;
+}
+
+.markdown-preview h1 {
+  font-size: 1.8rem;
+  margin-top: 1.5em;
+}
+
+.markdown-preview h2 {
+  font-size: 1.4rem;
+}
+
+.markdown-preview h3 {
+  font-size: 1.2rem;
+}
+
+.markdown-preview > :first-child {
+  margin-top: 0;
+}
+
+.markdown-preview blockquote p {
+  display: block;
+  margin: 0.5em 0;
+}
+
+.markdown-preview pre {
+  overflow-wrap: normal;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.markdown-preview table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.markdown-preview th,
+.markdown-preview td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.8rem;
+}
+
+.markdown-preview th {
+  background: var(--code-bg);
+}
+
+.markdown-preview input[type="checkbox"] {
+  accent-color: var(--accent);
+}
+
+.image-placeholder,
+.markdown-preview a:not([href]) {
+  color: var(--prompt);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

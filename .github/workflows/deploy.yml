@@ -27,10 +27,26 @@ jobs:
         with:
           bundler-cache: true
 
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Build JavaScript
+        run: |
+          npm ci
+          npm run build
+
       - name: Build site
         run: bundle exec bridgetown build
         env:
           BRIDGETOWN_ENV: production
+
+      - name: Test Markdown viewer
+        run: npm test
+        env:
+          CHROME_BIN: /usr/bin/google-chrome
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4

@@ -3,4 +3,6 @@
 set -eux
 
 bundle check || bundle install
+npm ci
+npm run build
 bundle exec bridgetown start

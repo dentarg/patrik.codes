@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="/css/markdown.css">
+
+<main id="markdown-viewer">
+  <div id="viewer-intro">
+    <header>
+      <p><a href="/">&larr; patrik.codes</a></p>
+      <h1>Markdown viewer</h1>
+      <p>Open Markdown files in your browser. Your files stay on your device.</p>
+    </header>
+
+    <div id="drop-zone" class="drop-zone">
+      <p>Drop Markdown files here</p>
+      <label class="file-picker">
+        <span>Choose files</span>
+        <input id="file-input" type="file" accept=".md,.markdown,.mdown,.mkd" multiple
+          aria-describedby="file-help" disabled>
+      </label>
+      <p id="file-help">CommonMark + GitHub-flavored Markdown. Up to 1 MiB per file.</p>
+    </div>
+
+    <p class="viewer-note">Images are not loaded. Links to local files cannot be opened from a dropped document.</p>
+    <noscript><p>Enable JavaScript to open Markdown files.</p></noscript>
+  </div>
+
+  <div id="viewer-toolbar" class="viewer-toolbar" hidden>
+    <button id="clear-files" type="button">Clear</button>
+    <label id="document-picker" hidden>
+      Document
+      <select id="document-select"></select>
+    </label>
+  </div>
+
+  <p id="viewer-status" role="status">Loading viewer…</p>
+
+  <section id="document" aria-labelledby="document-name" hidden>
+    <h2 id="document-name" class="sr-only"></h2>
+    <article id="markdown-preview" class="markdown-preview" aria-label="Rendered Markdown"></article>
+  </section>
+</main>
+
+<script type="module" src="/js/markdown-viewer.js"></script>

@@ -1,0 +1,20 @@
+{
+  "name": "patrik-codes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild frontend/markdown-viewer.js frontend/markdown-worker.js --bundle --minify --format=esm --conditions=worker --outdir=src/js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "dependencies": {
+    "micromark": "4.0.3",
+    "micromark-extension-gfm": "3.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "puppeteer-core": "25.13.0"
+  }
+}

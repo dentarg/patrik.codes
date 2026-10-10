@@ -3,3 +3,4 @@
 /.bridgetown-cache/
 /.bridgetown-webpack/
 /node_modules/
+/src/js/
