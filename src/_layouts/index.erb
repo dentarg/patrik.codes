@@ -7,7 +7,7 @@ layout: default
 
 <p><a href="/markdown/">Markdown viewer</a></p>
 
-<% site.collections.posts.resources.reverse.each do |post| %>
+<% site.collections.posts.resources.each do |post| %>
 <h2>
   <a href="<%= post.relative_url %>"><%= post.data.title %></a>
 </h2>
